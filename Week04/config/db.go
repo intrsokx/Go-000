@@ -10,8 +10,11 @@ type DbCfg struct {
 
 var DCfg *DbCfg
 
-func InitDCfg(db []byte) error {
-	return json.Unmarshal(db, DCfg)
+func InitDCfg(db []byte) {
+	DCfg = &DbCfg{}
+	if e := json.Unmarshal(db, DCfg); e != nil {
+		panic(e)
+	}
 }
 
 func NewDbCfg() *DbCfg {

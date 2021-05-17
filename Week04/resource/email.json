@@ -1,0 +1,8 @@
+{
+  "host": "mail.xxx.xxx",
+  "port": 25,
+  "sender": "user@xxx.cn",
+  "sender_name": "发件人中文名称",
+  "password": "xxx",
+  "receiver": ["user1@xxx.cn", "user2@xxx.cn", "user3@xxx.cn"]
+}
